@@ -200,3 +200,13 @@ function printNumberOfGuests(guestList) {
 }
 // Call the function to print the number of guests
 printNumberOfGuests(guestList);
+// Question 20
+console.log("Question 20");
+// Define an array of countries
+var countries = ['USA', 'Canada', 'Australia', 'Japan', 'Brazil', 'Germany'];
+// Print the list of countries
+console.log("List of countries:");
+for (var _i = 0, countries_1 = countries; _i < countries_1.length; _i++) {
+    var country = countries_1[_i];
+    console.log(country);
+}

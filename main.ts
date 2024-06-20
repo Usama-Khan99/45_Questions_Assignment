@@ -284,3 +284,16 @@ function printNumberOfGuests(guestList: string[]): void {
 // Call the function to print the number of guests
 printNumberOfGuests(guestList);
 
+// Question 20
+
+console.log("Question 20");
+
+// Define an array of countries
+let countries: string[] = ['USA', 'Canada', 'Australia', 'Japan', 'Brazil', 'Germany'];
+
+// Print the list of countries
+console.log("List of countries:");
+for (let country of countries) {
+    console.log(country);
+}
+
