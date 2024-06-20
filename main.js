@@ -53,3 +53,19 @@ console.log("dost" + " " + names[0]);
 console.log("dost" + " " + names[1]);
 console.log("dost" + " " + names[2]);
 console.log("dost" + " " + names[3]);
+// Question 13
+let favoriteTransportation = [];
+favoriteTransportation.push(['motorcycle', 'honda']);
+favoriteTransportation.push(['Car', 'Toyota']);
+favoriteTransportation.push(['Bicycle', 'Sohrab']);
+favoriteTransportation.forEach(([transport, brand]) => {
+    console.log(`I would like to own a ${brand} ${transport}`);
+});
+// Question 14
+let guestList = ['Ahar', 'Salik', 'ubair'];
+console.log(`Welcome to dinner ${guestList[0]}`);
+console.log(`Welcome to dinner ${guestList[1]}`);
+console.log(`Welcome to dinner ${guestList[2]}`);
+// QUestion 15
+guestList.push('Mota');
+console.log(guestList);

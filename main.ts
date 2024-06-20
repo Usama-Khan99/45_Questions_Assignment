@@ -106,5 +106,4 @@ console.log(`Welcome to dinner ${guestList[0]}`);
 console.log(`Welcome to dinner ${guestList[1]}`);
 console.log(`Welcome to dinner ${guestList[2]}`);
 
-
-
+// Question 15 
