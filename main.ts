@@ -118,6 +118,34 @@ console.log(`Welcome to dinner ${guestList[2]}`);
 // Question 15 
 
 
+// Print original guest list
+console.log("Original Guest List:");
+console.log(guestList);
+
+// Name of the guest who can't make it
+let guestWhoCantMakeIt: string = "Salik";
+console.log(`\nUnfortunately, ${guestWhoCantMakeIt} can't make it.`);
+
+// Find index of the guest who can't make it
+let indexToRemove: number = guestList.indexOf(guestWhoCantMakeIt);
+if (indexToRemove !== -1) {
+    // Replace the guest who can't make it with a new person
+    let newPerson: string = "Frank";
+    guestList[indexToRemove] = newPerson;
+
+    // Print updated guest list
+    console.log("\nUpdated Guest List:");
+    console.log(guestList);
+
+    // Send out invitations to remaining guests
+    console.log("\nInvitations:");
+    guestList.forEach(guest => {
+        console.log(`Dear ${guest}, please join us for dinner!`);
+    });
+} else {
+    console.log(`Guest ${guestWhoCantMakeIt} was not found in the list.`);
+}
+
 
 // Question 18 
 
