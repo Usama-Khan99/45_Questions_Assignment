@@ -316,3 +316,18 @@ for (let city of cities) {
     console.log(`City: ${city.name}, Country: ${city.country}, Population: ${city.population}`);
 }
 
+// Question 22 
+
+console.log("Question 22");
+
+
+// Accessing an index that doesn't exist (intentional error)
+// Trying to access the 6th city (index 5, since arrays are 0-indexed)
+let sixthCity = cities[5];  // This line will cause an index error because there is no index 5
+
+// Correcting the error by accessing an existing index
+let thirdCity = cities[2];  // Corrected to access index 2
+
+// Print information about the third city
+console.log(`Third city: ${thirdCity.name}, Country: ${thirdCity.country}, Population: ${thirdCity.population}`);
+

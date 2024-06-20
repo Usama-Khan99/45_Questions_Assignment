@@ -226,3 +226,12 @@ for (var _a = 0, cities_1 = cities; _a < cities_1.length; _a++) {
     var city = cities_1[_a];
     console.log("City: ".concat(city.name, ", Country: ").concat(city.country, ", Population: ").concat(city.population));
 }
+// Question 22 
+console.log("Question 22");
+// Accessing an index that doesn't exist (intentional error)
+// Trying to access the 6th city (index 5, since arrays are 0-indexed)
+var sixthCity = cities[5]; // This line will cause an index error because there is no index 5
+// Correcting the error by accessing an existing index
+var thirdCity = cities[2]; // Corrected to access index 2
+// Print information about the third city
+console.log("Third city: ".concat(thirdCity.name, ", Country: ").concat(thirdCity.country, ", Population: ").concat(thirdCity.population));
