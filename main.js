@@ -210,3 +210,19 @@ for (var _i = 0, countries_1 = countries; _i < countries_1.length; _i++) {
     var country = countries_1[_i];
     console.log(country);
 }
+// Question 21 
+console.log("Question 21");
+// Define an array of city objects
+var cities = [
+    { name: 'New York', country: 'USA', population: 8537673 },
+    { name: 'Tokyo', country: 'Japan', population: 9273000 },
+    { name: 'London', country: 'UK', population: 8982000 },
+    { name: 'Paris', country: 'France', population: 2141000 },
+    { name: 'Sydney', country: 'Australia', population: 5312000 }
+];
+// Print information about each city
+console.log("Information about cities:");
+for (var _a = 0, cities_1 = cities; _a < cities_1.length; _a++) {
+    var city = cities_1[_a];
+    console.log("City: ".concat(city.name, ", Country: ").concat(city.country, ", Population: ").concat(city.population));
+}

@@ -297,3 +297,22 @@ for (let country of countries) {
     console.log(country);
 }
 
+// Question 21 
+
+console.log("Question 21");
+
+// Define an array of city objects
+let cities: { name: string, country: string, population: number }[] = [
+    { name: 'New York', country: 'USA', population: 8537673 },
+    { name: 'Tokyo', country: 'Japan', population: 9273000 },
+    { name: 'London', country: 'UK', population: 8982000 },
+    { name: 'Paris', country: 'France', population: 2141000 },
+    { name: 'Sydney', country: 'Australia', population: 5312000 }
+];
+
+// Print information about each city
+console.log("Information about cities:");
+for (let city of cities) {
+    console.log(`City: ${city.name}, Country: ${city.country}, Population: ${city.population}`);
+}
+
