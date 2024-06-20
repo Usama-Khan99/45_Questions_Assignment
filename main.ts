@@ -269,3 +269,18 @@ console.log(placesToVisit);
 placesToVisit.sort();
 console.log("\nSorted Alphabetically:");
 console.log(placesToVisit);
+
+
+// Question 19 
+
+console.log("Question 19");
+
+
+// Function to print number of guests
+function printNumberOfGuests(guestList: string[]): void {
+    console.log(`You are inviting ${guestList.length} people to dinner.`);
+}
+
+// Call the function to print the number of guests
+printNumberOfGuests(guestList);
+
