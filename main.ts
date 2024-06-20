@@ -7,18 +7,27 @@ console.log(eric);
 
 // Question 3
 
-let name = "Usama";
+function printNameCases(name: string): void {
+    // Print lowercase
+    console.log("Lowercase:", name.toLowerCase());
 
-console.log(name.toLowerCase());
-console.log(name.toUpperCase());
+    // Print uppercase
+    console.log("Uppercase:", name.toUpperCase());
 
-function toTitleCase(str: string): string {
-    return str.replace(/\b\w/g, (char) => char.toUpperCase());
+    // Print titlecase (capitalize first letter of each word)
+    console.log("Titlecase:", toTitleCase(name));
 }
 
-let variable = "hello world";
-let titleCaseVariable = toTitleCase(variable);
-console.log(titleCaseVariable); // Output: Hello World
+function toTitleCase(str: string): string {
+    return str.replace(/\w\S*/g, function(txt) {
+        return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+    });
+}
+
+// Example usage:
+let personName: string = "john doe";
+printNameCases(personName);
+
 
 
 
@@ -107,3 +116,51 @@ console.log(`Welcome to dinner ${guestList[1]}`);
 console.log(`Welcome to dinner ${guestList[2]}`);
 
 // Question 15 
+
+
+
+// Question 18 
+
+
+let placesToVisit: string[] = [
+    "Tokyo",
+    "Paris",
+    "Machu Picchu",
+    "Santorini",
+    "Sydney"
+];
+
+// Print original array
+console.log("Original Order:");
+console.log(placesToVisit);
+
+// Print array in alphabetical order (without modifying original list)
+console.log("\nAlphabetical Order:");
+console.log([...placesToVisit].sort());
+
+// Show original array is still in original order
+console.log("\nOriginal Order Check:");
+console.log(placesToVisit);
+
+// Print array in reverse alphabetical order (without modifying original list)
+console.log("\nReverse Alphabetical Order:");
+console.log([...placesToVisit].sort().reverse());
+
+// Show original array is still in original order
+console.log("\nOriginal Order Check:");
+console.log(placesToVisit);
+
+// Reverse the order of the original list
+placesToVisit.reverse();
+console.log("\nReversed Order:");
+console.log(placesToVisit);
+
+// Reverse the order again to get back to original order
+placesToVisit.reverse();
+console.log("\nBack to Original Order:");
+console.log(placesToVisit);
+
+// Sort array in alphabetical order (modifying the original list)
+placesToVisit.sort();
+console.log("\nSorted Alphabetically:");
+console.log(placesToVisit);
