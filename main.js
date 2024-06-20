@@ -82,6 +82,51 @@ console.log("Welcome to dinner ".concat(guestList[0]));
 console.log("Welcome to dinner ".concat(guestList[1]));
 console.log("Welcome to dinner ".concat(guestList[2]));
 // Question 15 
+// Print original guest list
+console.log("Original Guest List:");
+console.log(guestList);
+// Name of the guest who can't make it
+var guestWhoCantMakeIt = "Salik";
+console.log("\nUnfortunately, ".concat(guestWhoCantMakeIt, " can't make it."));
+// Find index of the guest who can't make it
+var indexToRemove = guestList.indexOf(guestWhoCantMakeIt);
+if (indexToRemove !== -1) {
+    // Replace the guest who can't make it with a new person
+    var newPerson = "Frank";
+    guestList[indexToRemove] = newPerson;
+    // Print updated guest list
+    console.log("\nUpdated Guest List:");
+    console.log(guestList);
+    // Send out invitations to remaining guests
+    console.log("\nInvitations:");
+    guestList.forEach(function (guest) {
+        console.log("Dear ".concat(guest, ", please join us for dinner!"));
+    });
+}
+else {
+    console.log("Guest ".concat(guestWhoCantMakeIt, " was not found in the list."));
+}
+// Question 16 
+// Print original guest list
+console.log("Original Guest List:");
+console.log(guestList);
+// Inform about bigger dinner table
+console.log("\nGood news! We found a bigger dinner table!");
+// Add one new guest to the beginning of the array
+var newGuest1 = "Harry";
+guestList.unshift(newGuest1);
+// Add one new guest to the middle of the array
+var newGuest2 = "Isabelle";
+guestList.splice(Math.ceil(guestList.length / 2), 0, newGuest2);
+// Add one new guest to the end of the array
+var newGuest3 = "Jack";
+guestList.push(newGuest3);
+// Print new guest list with invitations
+console.log("\nInvitations:");
+guestList.forEach(function (guest) {
+    console.log("Dear ".concat(guest, ", please join us for dinner!"));
+});
+// Question 18 
 var placesToVisit = [
     "Tokyo",
     "Paris",

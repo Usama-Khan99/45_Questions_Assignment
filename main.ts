@@ -146,6 +146,38 @@ if (indexToRemove !== -1) {
     console.log(`Guest ${guestWhoCantMakeIt} was not found in the list.`);
 }
 
+// Question 16 
+
+
+// Print original guest list
+console.log("Original Guest List:");
+console.log(guestList);
+
+
+    // Inform about bigger dinner table
+    console.log("\nGood news! We found a bigger dinner table!");
+
+    // Add one new guest to the beginning of the array
+    let newGuest1: string = "Harry";
+    guestList.unshift(newGuest1);
+
+    // Add one new guest to the middle of the array
+    let newGuest2: string = "Isabelle";
+    guestList.splice(Math.ceil(guestList.length / 2), 0, newGuest2);
+
+    // Add one new guest to the end of the array
+    let newGuest3: string = "Jack";
+    guestList.push(newGuest3);
+
+    // Print new guest list with invitations
+    console.log("\nInvitations:");
+    guestList.forEach(guest => {
+        console.log(`Dear ${guest}, please join us for dinner!`);
+    });
+
+
+
+
 
 // Question 18 
 
