@@ -9,9 +9,11 @@ var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
     }
     return to.concat(ar || Array.prototype.slice.call(from));
 };
+console.log("Question 2");
 var eric = "Hello Eric, would you like to learn some Python today?";
 console.log(eric);
 // Question 3
+console.log("Question 3");
 function printNameCases(name) {
     // Print lowercase
     console.log("Lowercase:", name.toLowerCase());
@@ -29,6 +31,7 @@ function toTitleCase(str) {
 var personName = "john doe";
 printNameCases(personName);
 // Question 4
+console.log("Question 4");
 function printFamousQuote(author, quote) {
     console.log("".concat(author, " once said, \"").concat(quote, "\""));
 }
@@ -36,7 +39,9 @@ var author = "Albert Einstein";
 var quote = "A person who never made a mistake never tried anything new.";
 printFamousQuote(author, quote);
 // Question 5
+console.log("Question 5");
 // Question 6
+console.log("Question 6");
 // Store the person's name with whitespace characters
 var nameWithWhitespace = "\t \n  John Doe \n \t";
 // Print the name with whitespace
@@ -46,28 +51,33 @@ var strippedName = nameWithWhitespace.trim();
 // Print the stripped name
 console.log("Stripped name:", strippedName);
 // Question 7 & 8
+console.log("Question 7 & 8");
 console.log(5 + 3);
 console.log(11 - 3);
 console.log(2 * 4);
 console.log(16 / 2);
 // Question 9 & 10
+console.log("Question 9 & 10");
 // store a number in variable name favorite number
 var favoriteNumber = 7;
 // store a message in a variable
 var message = " My favorite number is";
 console.log(message + " " + favoriteNumber);
 // Question 11
+console.log("Question 11");
 var names = ["salik", "mota", "ubair", "hasan"];
 console.log(names[0]);
 console.log(names[1]);
 console.log(names[2]);
 console.log(names[3]);
 // Question 12
+console.log("Question 12");
 console.log("dost" + " " + names[0]);
 console.log("dost" + " " + names[1]);
 console.log("dost" + " " + names[2]);
 console.log("dost" + " " + names[3]);
 // Question 13
+console.log("Question 13");
 var favoriteTransportation = [];
 favoriteTransportation.push(['motorcycle', 'honda']);
 favoriteTransportation.push(['Car', 'Toyota']);
@@ -77,13 +87,14 @@ favoriteTransportation.forEach(function (_a) {
     console.log("I would like to own a ".concat(brand, " ").concat(transport));
 });
 // Question 14
+console.log("Question 14");
 var guestList = ['Ahar', 'Salik', 'ubair'];
 console.log("Welcome to dinner ".concat(guestList[0]));
 console.log("Welcome to dinner ".concat(guestList[1]));
 console.log("Welcome to dinner ".concat(guestList[2]));
 // Question 15 
 // Print original guest list
-console.log("Original Guest List:");
+console.log("Question 15: Original Guest List:");
 console.log(guestList);
 // Name of the guest who can't make it
 var guestWhoCantMakeIt = "Salik";
@@ -108,7 +119,7 @@ else {
 }
 // Question 16 
 // Print original guest list
-console.log("Original Guest List:");
+console.log("Question 16: Original Guest List:");
 console.log(guestList);
 // Inform about bigger dinner table
 console.log("\nGood news! We found a bigger dinner table!");
@@ -126,6 +137,26 @@ console.log("\nInvitations:");
 guestList.forEach(function (guest) {
     console.log("Dear ".concat(guest, ", please join us for dinner!"));
 });
+// Question 17 
+// Print original guest list
+console.log("Question 17: Original Guest List:");
+console.log(guestList);
+// Inform that only two people can be invited
+console.log("\nSorry, we can only invite two people for dinner.");
+// Remove guests until only two names remain
+while (guestList.length > 2) {
+    var removedGuest = guestList.pop();
+    console.log("Sorry, ".concat(removedGuest, ", we can't invite you to dinner."));
+}
+// Print messages to remaining guests
+console.log("\nInvitation for ".concat(guestList[0], ": You're still invited to dinner."));
+console.log("Invitation for ".concat(guestList[1], ": You're still invited to dinner."));
+// Remove the last two names from the list
+guestList.pop();
+guestList.pop();
+// Print to verify the list is empty
+console.log("\nFinal Guest List:");
+console.log(guestList);
 // Question 18 
 var placesToVisit = [
     "Tokyo",
