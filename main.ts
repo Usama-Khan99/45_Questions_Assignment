@@ -431,3 +431,56 @@ else{
 }
 
 
+// Question 27
+
+console.log('Question 27');
+
+// Version 1
+
+if (alien_color = 'green'){
+    console.log('Player just earned 5 points');
+    
+}
+else if (alien_color = 'red'){
+    console.log('PLayer just earned 10 points');
+    
+}
+else if (alien_color = 'yellow'){
+    console.log('PLayer just earned 15 points');
+    
+}
+
+// Version 2
+
+alien_color = 'yellow';
+
+if (alien_color = 'green'){
+    console.log('Player just earned 5 points');
+    
+}
+else if (alien_color = 'red'){
+    console.log('PLayer just earned 10 points');
+    
+}
+else if (alien_color = 'yellow'){
+    console.log('PLayer just earned 15 points');
+    
+}
+
+// Version 3
+
+alien_color = "red";
+
+if (alien_color = 'green'){
+    console.log('Player just earned 5 points');
+    
+}
+else if (alien_color = 'red'){
+    console.log('PLayer just earned 10 points');
+    
+}
+else if (alien_color = 'yellow'){
+    console.log('PLayer just earned 15 points');
+    
+}
+
