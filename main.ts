@@ -379,3 +379,22 @@ console.log(age === 25);
 console.log("Is name !== 'Alice'? I predict False.");
 console.log(name !== 'Alice');
 
+// Question 24
+
+console.log('Question 24')
+
+// Question 25
+
+console.log("Question 25");
+
+
+let alien_colors : string[] = ["green","red","Yellow"];
+if(alien_colors [0]=== 'green')
+    {
+        console.log("Player just earned 5 points");
+        
+    }
+    else{}
+
+
+
