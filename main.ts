@@ -331,3 +331,51 @@ let thirdCity = cities[2];  // Corrected to access index 2
 // Print information about the third city
 console.log(`Third city: ${thirdCity.name}, Country: ${thirdCity.country}, Population: ${thirdCity.population}`);
 
+// Question 23 
+
+console.log("Question 23");
+
+let age: number = 25;
+let name: string = 'Alice';
+let isAdmin: boolean = true;
+
+// Test 1: Equality test with number
+console.log("Is age == 25? I predict True.");
+console.log(age == 25);
+
+// Test 2: Equality test with string
+console.log("Is name == 'Alice'? I predict True.");
+console.log(name == 'Alice');
+
+// Test 3: Inequality test with number
+console.log("Is age != 30? I predict True.");
+console.log(age != 30);
+
+// Test 4: Inequality test with string
+console.log("Is name != 'Bob'? I predict True.");
+console.log(name != 'Bob');
+
+// Test 5: Logical AND operation
+console.log("Is isAdmin && age > 18? I predict True.");
+console.log(isAdmin && age > 18);
+
+// Test 6: Logical OR operation
+console.log("Is isAdmin || age < 18? I predict True.");
+console.log(isAdmin || age < 18);
+
+// Test 7: Greater than comparison
+console.log("Is age > 30? I predict False.");
+console.log(age > 30);
+
+// Test 8: Less than comparison
+console.log("Is age < 30? I predict True.");
+console.log(age < 30);
+
+// Test 9: Strict equality (type and value)
+console.log("Is age === '25'? I predict False.");
+console.log(age === 25);
+
+// Test 10: Strict inequality (type and value)
+console.log("Is name !== 'Alice'? I predict False.");
+console.log(name !== 'Alice');
+
