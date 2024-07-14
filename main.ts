@@ -377,7 +377,7 @@ console.log(age === 25);
 
 // Test 10: Strict inequality (type and value)
 console.log("Is name !== 'Alice'? I predict False.");
-console.log(name !== 'Alice');
+// console.log(name !== 'Alice');
 
 // Question 24
 
@@ -481,6 +481,40 @@ else if (alien_color = 'red'){
 }
 else if (alien_color = 'yellow'){
     console.log('PLayer just earned 15 points');
+    
+}
+
+// Question 28
+
+console.log("Question 28");
+
+let person_age : number = 2;
+
+if (person_age < 2){
+    console.log("Person is a baby");
+    
+}
+
+else if (person_age >= 2 && age <4){
+    console.log("Person is a toddler");
+
+    
+}
+
+else if (person_age >= 4 && age <13){
+    console.log("Person is a kid");
+   
+}
+else if (person_age >= 13 && age <20){
+    console.log("Person is a teenager");
+   
+}
+else if (person_age >= 20 && age <65){
+    console.log("Person is a adult");
+   
+}
+else {
+    console.log('Person is a elder');
     
 }
 
