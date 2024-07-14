@@ -388,13 +388,46 @@ console.log('Question 24')
 console.log("Question 25");
 
 
-let alien_colors : string[] = ["green","red","Yellow"];
-if(alien_colors [0]=== 'green')
+let alien_color : string = "green";
+if(alien_color === 'green')
     {
         console.log("Player just earned 5 points");
         
     }
     else{}
 
+    if (alien_color === 'red')
+        {
+
+        }
+
+
+
+// Question 26 
+
+console.log("Question 26");
+
+if (alien_color === 'green') {
+console.log("Player just earned 5 points");
+
+}
+
+else {
+    console.log("Player just earned 10 points");
+    
+}
+
+// 2 version
+
+console.log("Second Version");
+
+if (alien_color = 'red' && 'yellow'){
+    console.log('Player just earned 5 points');
+    
+}
+else{
+    console.log('Player just earned 10 points');
+    
+}
 
 
